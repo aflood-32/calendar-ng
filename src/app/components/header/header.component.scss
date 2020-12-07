@@ -1,0 +1,29 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__prev-btn{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7.5px 13.0px 7.5px 0;
+    border-color: transparent #000000 transparent transparent;
+    background: none;
+    cursor: pointer;
+  }
+  &__next-btn{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7.5px 0 7.5px 13.0px;
+    border-color: transparent transparent transparent #000000;
+    background: none;
+    cursor: pointer;
+  }
+  span{
+    margin: 0 40px;
+    font-size: 24px;
+    width: 200px;
+    text-align: center;
+  }
+}
