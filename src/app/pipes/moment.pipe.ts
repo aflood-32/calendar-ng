@@ -5,10 +5,9 @@ import * as moment from 'moment';
   name: 'moment',
   pure: false
 })
-export class MomentPipe implements PipeTransform {
 
-  transform(m: moment.Moment, format: string = 'MMMM YYYY' ): string {
+export class MomentPipe implements PipeTransform {
+  transform(m: moment.Moment, format: string = 'MMMM YYYY'): string {
     return m.format(format);
   }
-
 }

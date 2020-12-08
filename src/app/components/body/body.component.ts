@@ -49,6 +49,6 @@ export class BodyComponent implements OnInit{
   }
 
   select(day: moment.Moment) {
-    this.dateService.changeDate(day);
+    this.dateService.changeSelectedDate(day);
   }
 }

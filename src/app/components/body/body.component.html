@@ -12,11 +12,10 @@
   </thead>
   <tbody>
     <tr *ngFor="let week of calendar">
-      <td *ngFor="let day of week.days" [class.disabled]="day.disabled">
+      <td *ngFor="let day of week.days" (click)="select(day.value)" [class.disabled]="day.disabled">
         <span
           [class.active]="day.active"
           [class.selected]="day.selected"
-          (click)="select(day.value)"
         >{{day.value | moment: 'ddd DD'}}</span>
       </td>
     </tr>

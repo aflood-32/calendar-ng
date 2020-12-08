@@ -10,11 +10,10 @@ import {switchMap} from 'rxjs/operators';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
   form: FormGroup;
   tasks: ITask[] = [];
 
-  constructor(public dateService: DateService, public taskService: TasksService) { }
+  constructor(public dateService: DateService, private taskService: TasksService) { }
 
   ngOnInit(): void {
     this.dateService.date.pipe(

@@ -18,6 +18,7 @@ table{
   }
   td{
     transition: background-color linear .3s;
+    cursor: pointer;
     &:hover{
       background-color: #e5e5e5;
     }
@@ -26,7 +27,6 @@ table{
     background: #c5c5c5;
   }
   span{
-    cursor: pointer;
     &.active{
       color: red;
       font-weight: 700;
